@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <load
+      src="./partials/header.html"
+      icon-path="./img/sprite.svg#logo"
+      highlight-curr="active"
+    />
+
+    <!-- <main>
+      <div class="container">
+        <h1 class="main-title">
+          <span class="main-title-gradient">Welcome</span> to page 3
+        </h1>
+        <load src="./partials/back-link.html" />
+      </div>
+    </main> -->
+<div class="btn-container">
+  <p>
+    <a class="btn" href="index.html">Go back</a>
+  </p>
+</div>
+
+<div class="thumb-block">
+  <form class="form">
+    <label class="label-delay">
+      Delay (ms) <br />
+      <input type="number" name="delay" required />
+    </label>
+    <fieldset class="frame">
+      <legend class="legend">State</legend>
+      <label class="label-radio">
+        <input type="radio" name="state" value="fulfilled" required />
+        <span>Fulfilled</span>
+      </label>
+      <label class="label-radio">
+        <input type="radio" name="state" value="rejected" required />
+        <span>Rejected</span>
+      </label>
+    </fieldset>
+    <button class="btn-start" type="submit">Create notification</button>
+  </form>
+</div>
+
+<script src="js/2-snackbar.js" type="module"></script>
+    <load src="./partials/footer.html" />
+  </body>
+</html>
